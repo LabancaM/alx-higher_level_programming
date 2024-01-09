@@ -9,7 +9,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
             c, d = 0, 0
         elif m == 1:
             c, d = tuple_b[0], 0
-        else:
+        elif m >= 2:
             c, d = tuple_b[0], tuple_b[1]
     if n == 1:
         a, b = tuple_a[0], 0
@@ -17,14 +17,14 @@ def add_tuple(tuple_a=(), tuple_b=()):
             c, d = 0, 0
         elif m == 1:
             c, d = tuple_b[0], 0
-        else:
+        elif m >= 2:
             c, d = tuple_b[0], tuple_b[1]
-    else:
+    elif n >= 2:
         a, b = tuple_a[0], tuple_a[1]
         if m == 0:
             c, d = 0, 0
         elif m == 1:
             c, d = tuple_b[0], 0
-        else:
+        elif m >= 2:
             c, d = tuple_b[0], tuple_b[1]
     return a + c, b + d
