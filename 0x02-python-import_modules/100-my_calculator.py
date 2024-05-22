@@ -3,7 +3,7 @@
 if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     import sys
-    
+
     length = len(sys.argv)
     operators = "+-*/"
     if length != 4:
