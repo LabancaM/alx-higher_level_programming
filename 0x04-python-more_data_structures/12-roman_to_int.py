@@ -10,6 +10,9 @@ def roman_to_int(roman_string):
                 (roman_string[i + 1] == "V" or roman_string[i + 1] == "X"):
             sum -= 1
             continue
+        elif roman_string[i] == "X" and roman_string[i + 1] == "C":
+            sum -= 10
+            continue
         sum += dicte[roman_string[i]]
     sum += dicte[roman_string[-1]]
     return sum
