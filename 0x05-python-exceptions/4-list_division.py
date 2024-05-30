@@ -2,7 +2,7 @@
 def list_division(my_list_1, my_list_2, list_length):
     liste = []
     for index in range(list_length):
-        try :
+        try:
             res = my_list_1[index] / my_list_2[index]
         except ZeroDivisionError:
             res = 0
