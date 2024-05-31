@@ -66,11 +66,11 @@ class SinglyLinkedList:
             node.next_node = head.next_node
             head.next_node = node
 
-        def __str__(self):
-            """ print representation"""
-            liste = []
-            svg = self.__head
-            while svg is not None:
-                liste.append(str(svg.data))
-                svg = svg.next_node
-            return "\n".join(liste)
+    def __str__(self):
+        """ print representation"""
+        liste = []
+        svg = self.__head
+        while svg is not None:
+            liste.append(str(svg.data))
+            svg = svg.next_node
+        return "\n".join(liste)
