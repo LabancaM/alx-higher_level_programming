@@ -59,6 +59,6 @@ class Square:
                 for j in range(length):
                     liste.append("#")
                 liste.append('\n')
-            return ''.join(liste)
+            return ''.join(liste[:-1])
         else:
             return '\n'
