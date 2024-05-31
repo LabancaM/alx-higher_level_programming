@@ -61,4 +61,4 @@ class Square:
                 liste.append('\n')
             return ''.join(liste[:-1])
         else:
-            return '\n'
+            return ''
