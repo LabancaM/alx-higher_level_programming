@@ -53,7 +53,7 @@ class Square:
         liste = []
         if length > 0:
             if position[1] > 0:
-                liste.append(" " * position[1] - 2)
+                liste.append(" " * position[1] - 1)
                 liste.append('\n')
             for i in range(length):
                 liste.append(" " * position[0])
