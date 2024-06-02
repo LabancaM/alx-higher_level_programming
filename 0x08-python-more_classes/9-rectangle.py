@@ -54,7 +54,7 @@ class Rectangle():
             return 0
         return (self.__width + self.__height) * 2
 
-    @classmethod
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """ compare two rectangle"""
         if not isinstance(rect_1, Rectangle):
@@ -66,10 +66,10 @@ class Rectangle():
         else:
             return rect_2
 
-    @staticmethod
-    def square(self, size=0):
+    @classmethod
+    def square(cls, size=0):
         """ square"""
-        return self(size, size)
+        return cls(size, size)
 
     def __str__(self):
         """ string representation"""
